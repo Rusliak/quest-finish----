@@ -1,6 +1,6 @@
 import random
 a = ['Надо прислушиваться к мнению других. Там был голодный лев/Do not listen to the opinions of others. There was a hungry lion', 'Надо прислушиваться к мнению других. Там был злой лев./We must listen to the opinions of others. There was an evil lion']
-b = ['Я незнаю надо ли прислушиваться к мнению.Тут тупик, назад дороги нет/I don't know if I should listen to other people's opinions. It's a dead end, there's no way back', 'Сдесь был огонь расколённый до 1000000 градусов/Here was a red-hot fire up to 1,000,000 degrees']
+b = ['Я незнаю надо ли прислушиваться к мнению.Тут тупик, назад дороги нет/I dont know if I should listen to other peoples opinions. Its a dead end, theres no way back', 'Сдесь был огонь расколённый до 1000000 градусов/Here was a red-hot fire up to 1,000,000 degrees']
 c = ['Ура! Тут выход/Hooray! there is a way out', 'Сдесь пропасть/Here is the abyss']
 h = ['У вас сильная рука, вы его вырубили. А там виднеется выход!/You have a strong hand. You knocked him out, and there is a way out!','Вы расстерялись и промахнулись.О, белый свет виднеется/You got lost and missed. Oh, the white light is visible']
 j = ['Когда вы вернулись обратно вас ослепило до смерти/When you came back you were blinded to death', 'Вы вернулись к комнатам/you returned to the rooms']
@@ -19,7 +19,7 @@ if s == '2':
     print('Выйти отсюда можно пройдя через 2 двери/You can get out of here by going through 2 doors')
     print('В какую пойдём? 1 или 2?/Which one are we going to? 1 or 2?')
     print('над дверью слева написано: выход в двери под номером 2./Above the door on the left is written: exit through door number 2')
-    print('Я бы не доверился.Выход 1-Cправа или 2-Cлева?/I wouldn't trust. Output 1-Right or 2-Left?')
+    print('Я бы не доверился.Выход 1-Cправа или 2-Cлева?/I wouldnt trust. Output 1-Right or 2-Left?')
     d = input()
     if d == '1':
         print('Вы уверенно открыли правую дверь. Но за ней тебя ждал/You confidently entered the right door. But behind her was waiting for you ')
@@ -64,7 +64,7 @@ if s == '9':
     if w == '1':
         print('Вы победили! Ваша награда - свобода/You won! Your reward is freedom')
 if s == '10':
-    print('Здесь есть запертая дверь. И какой-то человек/There's a locked door and some man')
+    print('Здесь есть запертая дверь. И какой-то человек/Theres a locked door and some man')
     print('Он держит в руках похожий ключ. Может его заманить?/He holds a similar key in his hands. Can lure him?')
     print('Подойти? Да-1 Нет-2/Come up? 1-Yes 2-No')
     d = input()
@@ -85,7 +85,7 @@ if s == '10':
         if g == '1':
             print('Вы нашли одежду, Может дать ему? Он в рваных сидит. Да-1 Нет-2/Have you found clothes, can give him? He sits in torn ones. 1-Yes 2-No')
         if g == '2':
-            print('Вы не нашли больше вещей. Он не отдал ключ/You didn't find more things. He did not give the key')
+            print('Вы не нашли больше вещей. Он не отдал ключ/You didnt find more things. He did not give the key')
         i = input()
         if i == '1':
             print('Он согрелся и стал добрее. Осталось найти последнюю ценную вещь, Нажмите на 2 чтобы продолжить/He warmed up and became kinder. It remains to find the last thing. Click on 2 to continue')
@@ -102,19 +102,22 @@ if s == '10':
 #by Rusliak GitHab 2022
 
 '''
-BETA 0.1  (15.11.2021)
+BETA 0.1 (15.11.2021)
 Был создан простой код на квест/A simple code for the quest was created
 Всего 3 комнаты/Total 3 rooms
 -------------------------------------------------
-BETA 0.2  (27.11.2021)
+BETA 0.2 (27.11.2021)
 Было добавленно ещё 5 дверей/5 more doors have been added
 -------------------------------------------------
-BETA 0.3  (29.12.2021)
+BETA 0.3 (29.12.2021)
 Было добавленно ещё 2 комнаты/2 more rooms added
 -------------------------------------------------
-BETA 0.4  (12.01.2022)
+BETA 0.4 (12.01.2022)
 Исправление ошибок/Error correction
 -------------------------------------------------
-<<BETA 0.5>>  (02.06.2022)
+<<BETA 0.5>> (02.06.2022)
 Был добавлен Англиский Язык/English language has been added
+-------------------------------------------------
+<<BETA 0.6>> (16.08.2022)
+Исправление ошибок/Error correction
 '''
