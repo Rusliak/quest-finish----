@@ -1,116 +1,119 @@
 import random
-a = ['Надо прислушиваться к мнению других. Там был голодный лев/Do not listen to the opinions of others. There was a hungry lion', 'Надо прислушиваться к мнению других. Там был злой лев./We must listen to the opinions of others. There was an evil lion']
-b = ['Я незнаю надо ли прислушиваться к мнению.Тут тупик, назад дороги нет/I dont know if I should listen to other peoples opinions. Its a dead end, theres no way back', 'Сдесь был огонь расколённый до 1000000 градусов/Here was a red-hot fire up to 1,000,000 degrees']
-c = ['Ура! Тут выход/Hooray! there is a way out', 'Сдесь пропасть/Here is the abyss']
-h = ['У вас сильная рука, вы его вырубили. А там виднеется выход!/You have a strong hand. You knocked him out, and there is a way out!','Вы расстерялись и промахнулись.О, белый свет виднеется/You got lost and missed. Oh, the white light is visible']
-j = ['Когда вы вернулись обратно вас ослепило до смерти/When you came back you were blinded to death', 'Вы вернулись к комнатам/you returned to the rooms']
+a = ['Надо прислушиваться к мнению других. Там был голодный лев', 'Надо прислушиваться к мнению других. Там был злой лев.']
+b = ['Я незнаю надо ли прислушиваться к мнению.Тут тупик, назад дороги нет', 'Сдесь был огонь расколённый до 1000000 градусов']
+c = ['Ура! Тут выход', 'Сдесь пропасть']
+h = ['У вас сильная рука, вы его вырубили. А там виднеется выход!','Вы расстерялись и промахнулись.']
+j = ['Когда вы вернулись обратно вас ослепило до смерти', 'Вы вернулись к комнатам']
+p = ['Вы оглушили разбойника и забрали у него ключ от двери','Вы не успели его ударить, вас убили']
 
 
-
-print('Привет, это квест/Hey this is a quest')
-print('Вы проснулись в заброшенном доме/You woke up in an abandoned house')
-print('Перед вами 10 дверей. Может в одной из них выход?/There are 10 doors in front of you. Maybe one of them has a way out?')
+print('Привет, это квест')
+print('Вы проснулись в заброшенном доме')
+print('Перед вами 10 дверей. Может в одной из них выход?')
 s = input()
 if s == '3':
     print(random.choice(a))
 elif s == '1':
-    print('Дверь захлопнулась.Вы просидели там 2 года и умерли от голода/The door slammed shut. You sat there for 2 years and starved to death')
+    print('Дверь захлопнулась.Вы просидели там 2 года и умерли от голода')
 if s == '2':
-    print('Выйти отсюда можно пройдя через 2 двери/You can get out of here by going through 2 doors')
-    print('В какую пойдём? 1 или 2?/Which one are we going to? 1 or 2?')
-    print('над дверью слева написано: выход в двери под номером 2./Above the door on the left is written: exit through door number 2')
-    print('Я бы не доверился.Выход 1-Cправа или 2-Cлева?/I wouldnt trust. Output 1-Right or 2-Left?')
+    print('Выйти отсюда можно пройдя через 2 двери')
+    print('В какую пойдём? 1 или 2?')
+    print('над дверью слева написано: выход в двери под номером 2')
+    print('Я бы не доверился.Выход 1-Cправа или 2-Cлева?')
     d = input()
     if d == '1':
-        print('Вы уверенно открыли правую дверь. Но за ней тебя ждал/You confidently entered the right door. But behind her was waiting for you ')
-        print('Учитель математики. Который поставил вам 2 в журнал за прогул/The math teacher who gave you a 2 in a magazine for absenteeism')
+        print('Вы уверенно открыли правую дверь. Но за ней тебя ждал')
+        print('Учитель математики. Который поставил вам 2 в журнал за прогул')
     if d == '2':
         print(random.choice(b))
 elif s == '4':
-    print('Вы упали в бездну/you fell into the abyss')
+    print('Вы упали в бездну')
 if s == '5':
     print(random.choice(c))
 if s == '6':
-    print('О нет! Тут наёмник, он собирается вас убить/Oh no! here is a mercenary he is going to kill you!')
-    print('Ударить? 1-Да 2-Бежать/Hit? 1-Yes 2-Run')
+    print('О нет! Тут наёмник, он собирается вас убить')
+    print('Ударить? 1-Да 2-Бежать')
     d = input()
     if d == '1':
         print(random.choice(h))
     if d == '2':
-        print('Интерестный выбор. Но бежать некуда/Interesting choice, but nowhere to run')
+        print('Интерестный выбор. Но бежать некуда')
 if s == '7':
-    print('Сдесь мультяшный мир. Иследовать его? 1-Да 2-Нет/This is a cartoon world, explore it?')
+    print('Сдесь мультяшный мир. Иследовать его? 1-Да 2-Нет')
     d = input()
     if d == '2':
         print(random.choice(j))
     if d == '1':
-        print('Вы решили прогулятся по городу/You decide to walk around the city')
-        print('Походив по нему.Вы удивились, он был очень красивый/Walking on it - you were surprised, it was very beautiful')
-        print('Вы решили остаться в нём. Вы устроились на очень хорошую работу/You chose to stay in it. You got a very good job')
-        print('Вскоре вы привыкли к этому городу. И жили в нём до конца жизни/Soon, you got used to this city and lived in it for the rest of your life.')
+        print('Вы решили прогулятся по городу')
+        print('Походив по нему.Вы удивились, он был очень красивый')
+        print('Вы решили остаться в нём. Вы устроились на очень хорошую работу')
+        print('Вскоре вы привыкли к этому городу. И жили в нём до конца жизни.')
 if s == '8':
-    print('В этой двери было очень много страшных чудищ, они испугали вас до смерти/There were a lot of scary monsters in this door, they scared you to death')
+    print('В этой двери было очень много страшных чудищ, они утащили вас за собой')
 if s == '9':
-    print('Здесь очень много наёмников! Что делать!? 1-Бить 2-Обойти их/There are a lot of mercenaries here! What to do!? 1-beat 2-get around them')
+    print('Здесь очень много разбойников, Что делать!? 1-Драться 2-Убежать')
     d = input()
     if d == '2':
-        print('Чёрт!Дверь с замком,придётся драться, нажмите 1 чтобы драться/Crap! Locked door, have to fight, press 1 to fight')
+        print('Дверь захлопнулась. 1-Драться')
     if d == '1':
-        print(' Ваше здоровье 00000000000     1-Ударить     0000000000000 Здоровье наёмников/Your health:0000000000000     1-Strike     0000000000000:Health of mercenaries')
+        print('Ваше здоровье 00000000000     1-Ударить     0000000000000 Здоровье наёмников')
     a = input()
     if a == '1':
-        print('Ваше здоровье 00000000000    1-Ударить     000000 Здоровье наёмников/Your Health:0000000000000     1-Hit     000000:Mercenary Health')
+        print('Ваше здоровье 00000000000    1-Ударить     000000 Здоровье наёмников')
     w = input()
     if w == '1':
-        print('Вы победили! Ваша награда - свобода/You won! Your reward is freedom')
+        print(random.choice(p))
 if s == '10':
-    print('Здесь есть запертая дверь. И какой-то человек/Theres a locked door and some man')
-    print('Он держит в руках похожий ключ. Может его заманить?/He holds a similar key in his hands. Can lure him?')
-    print('Подойти? Да-1 Нет-2/Come up? 1-Yes 2-No')
+    print('Здесь есть запертая дверь. И какой-то человек')
+    print('Он держит в руках ключ от двери.')
+    print('Спросить про ключ? Да-1 Нет-2')
     d = input()
     if d == '1':
-        print('Вы подошли к нему. Он сказал что ему нужно что-нибудь ценное/You approached him. He said he needed something of value')
-        print('Тогда он отдаст ключ/Then he will give the key')
-        print('Вы походили по комнате и нашли амулет, предложить ему? 1-Да 2-Нет/You walked around the room and found an amulet to offer to him? 1-Yes 2-No')
+        print('Вы подошли к нему. Он сказал что ему нужно что-то что можно было бы продать')
+        print('Ему нужны деньги, если мы что-нибудь для него найдём')
+        print('Вы походили по комнате и нашли золотое кольцо, дать ему? 1-Да 2-Нет')
     if d == '2':
-        print('Он сам вам сказал найти что-нибудь ценное/He himself told you to find something of value.')
-        print('Вы походили по комнате и нашли кусочек золота, предложить ему? 1-Да 2-Нет/Did you walk around the room and find a piece of gold to offer to him? 1-Yes 2-No')
+        print('Он сам вам сказал найти что-нибудь ценное')
+        print('Вы походили по комнате и нашли кусочек золота, предложить ему? 1-Да 2-Нет')
     w = input()
     if w == '2':
-        print('Вы продолжили ходить по комнате, И нашли телефон/You continued to walk around the room, found the phone')
-        print('Вы предложили ему, он согласился и отдал ключ.Вы на свободе!/You offered him - he agreed and gave the key. You are free!')
+        print('Вы продолжили ходить по комнате, И нашли телефон')
+        print('Вы предложили ему, он согласился и отдал ключ.Вы на свободе!')
     if w == '1':
-        print('Он забрал кусочек золота и не дал ключ. Он сказал что адо что-то ценнее, Что-бы продолжить искать нажмите 1/He took a piece of gold and did not give the key. He said he needed something more valuable. To continue searching, press 1')
+        print('Он забрал кусочек золота и не дал ключ. Он сказал что адо что-то ценнее, Что-бы продолжить искать нажмите')
         g = input()
         if g == '1':
-            print('Вы нашли одежду, Может дать ему? Он в рваных сидит. Да-1 Нет-2/Have you found clothes, can give him? He sits in torn ones. 1-Yes 2-No')
+            print('Вы нашли одежду, Может дать ему? Он в рваных сидит. Да-1 Нет-2')
         if g == '2':
-            print('Вы не нашли больше вещей. Он не отдал ключ/You didnt find more things. He did not give the key')
+            print('Вы не нашли больше вещей. Он не отдал ключ')
         i = input()
         if i == '1':
-            print('Он согрелся и стал добрее. Осталось найти последнюю ценную вещь, Нажмите на 2 чтобы продолжить/He warmed up and became kinder. It remains to find the last thing. Click on 2 to continue')
+            print('Он согрелся и стал добрее. Осталось найти последнюю ценную вещь, Нажмите на 2 чтобы продолжить')
         if i == '2':
-            print('Вы нашли ключи от машины, предложить ему? Да-1 Нет-2/You found the car key, offer it to him? 1-Yes 2-No')
+            print('Вы нашли ключи от машины, предложить ему? Да-1 Нет-2')
         y = input()
         if y == '1':
-            print('Он очень удивился ведь раньше не замечал его/He was very surprised, because he had not noticed them before.')
-            print('Он отдал ключи/He gave the keys')
+            print('Он очень удивился ведь раньше не замечал его')
+            print('Он отдал ключи')
         if y == '2':
-            print('Вы очень долго искали вещи,ему это надоело и он выгнал вас из его комнаты/You were looking for things for a very long time, he got tired of it, he kicked you out of the room')
-
+            print('Вы очень долго искали вещи,ему это надоело и он выгнал вас из его комнаты')
 
 #by Rusliak GitHab 2022
 
 '''
-BETA 0.1 (15.11.2021)
-Был создан простой код на квест/A simple code for the quest was created
+BETA 0.1 (15.11.2021) [RU]
+-Был создан простой код на квест
 -------------------------------------------------
-BETA 0.4 (12.01.2022)
-Исправление ошибок/Error correction
+BETA 0.4 (12.01.2022) [RU]
+-Исправление ошибок
 -------------------------------------------------
-<<BETA 0.5>> (02.06.2022)
-Был добавлен Англиский Язык/English language has been added
+<<BETA 0.5>> (02.06.2022) [RU]
+-Был добавлен Англиский Язык
 -------------------------------------------------
-<<BETA 0.6>> (16.08.2022)
-Исправление ошибок/Error correction
+<<BETA 0.6>> (16.08.2022) [RU]
+-Исправление ошибок
+-------------------------------------------------
+<<BETA 0.7>> (2.11.2022) [RU]
+-Коррекцирование Диалогов
+-Разделение версий Русской и Англиской
 '''
